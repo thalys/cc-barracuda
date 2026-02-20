@@ -1,0 +1,17 @@
+# Cache files (generated per-user)
+skills/terminal/.cache/*.md
+!skills/terminal/.cache/.gitkeep
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
