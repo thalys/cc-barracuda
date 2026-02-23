@@ -5,7 +5,13 @@
   "author": {
     "name": "Thalys"
   },
-  "repository": "https://github.com/thalys/claude-terminal-skill",
+  "repository": "https://github.com/thalys/cc-barracuda",
   "license": "MIT",
-  "keywords": ["cli", "fish-shell", "completions", "terminal", "bash-to-fish"]
+  "keywords": [
+    "cli",
+    "fish-shell",
+    "completions",
+    "terminal",
+    "bash-to-fish"
+  ]
 }
