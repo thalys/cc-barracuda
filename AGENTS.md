@@ -16,11 +16,12 @@ Three-layer pipeline for CLI ingestion:
 
 ### Project Structure
 ```
+.claude-plugin/           → Plugin manifest
 skills/terminal/          → Main skill (SKILL.md + references/)
-agents/terminal/          → cli-collector subagent
-commands/terminal/        → /terminal:ingest-cmd slash command
+agents/                   → cli-collector subagent
+commands/                 → /terminal:ingest-cmd slash command
 examples/agents/          → Sample generated output (fzf-expert.md)
-install.fish              → Symlink-based installer
+install.fish              → Symlink-based installer (dev workflow)
 uninstall.fish            → Symlink remover
 ```
 
