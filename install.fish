@@ -57,12 +57,12 @@ _link $script_dir/skills/terminal $claude_dir/skills/terminal
 # Agents
 echo ""
 echo "Agents:"
-_link $script_dir/agents/terminal/cli-collector.md $claude_dir/agents/terminal/cli-collector.md
+_link $script_dir/agents/cli-collector.md $claude_dir/agents/terminal/cli-collector.md
 
 # Commands
 echo ""
 echo "Commands:"
-_link $script_dir/commands/terminal/ingest-cmd.md $claude_dir/commands/terminal/ingest-cmd.md
+_link $script_dir/commands/ingest-cmd.md $claude_dir/commands/terminal/ingest-cmd.md
 
 echo ""
 if test "$_terminal_dry_run" = true
