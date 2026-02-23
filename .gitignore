@@ -5,6 +5,9 @@ skills/terminal/.cache/*.md
 # Claude Code local settings
 .claude/settings.local.json
 
+# Local plans
+.plans/
+
 # OS
 .DS_Store
 Thumbs.db
@@ -15,3 +18,4 @@ Thumbs.db
 *~
 .idea/
 .vscode/
+
