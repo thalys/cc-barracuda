@@ -1,9 +1,13 @@
 {
+  "name": "cc-barracuda",
+  "owner": {
+    "name": "thalys"
+  },
   "plugins": [
     {
       "name": "terminal",
-      "description": "CLI tool ingestion, Fish shell completions, and bash-to-fish conversion. Turns any CLI tool into a specialized AI agent with Fish shell completions.",
-      "source": "."
+      "source": ".",
+      "description": "CLI tool ingestion, Fish shell completions, and bash-to-fish conversion. Turns any CLI tool into a specialized AI agent with Fish shell completions."
     }
   ]
 }
