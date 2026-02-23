@@ -34,11 +34,27 @@ The skill includes comprehensive reference documents that Claude loads on demand
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed
 - [Fish shell](https://fishshell.com/) (for completions output; the skill itself works in any shell)
 
-### Quick Install (Fish)
+### Plugin Install
+
+If you have the terminal plugin marketplace registered:
+
+```
+/plugin install terminal
+```
+
+Or install directly from the repository:
+
+```
+/plugin install github:thalys/claude-terminal-skill
+```
+
+### Development Install
+
+For contributors who clone the repo:
 
 ```fish
-git clone https://github.com/YOUR_USERNAME/terminal-skill.git
-cd terminal-skill
+git clone https://github.com/thalys/claude-terminal-skill.git
+cd claude-terminal-skill
 fish install.fish
 ```
 
@@ -53,10 +69,10 @@ Copy or symlink these paths:
 ~/.claude/skills/terminal/  ->  skills/terminal/
 
 # Subagent (background data collector)
-~/.claude/agents/terminal/cli-collector.md  ->  agents/terminal/cli-collector.md
+~/.claude/agents/terminal/cli-collector.md  ->  agents/cli-collector.md
 
 # Slash command
-~/.claude/commands/terminal/ingest-cmd.md  ->  commands/terminal/ingest-cmd.md
+~/.claude/commands/terminal/ingest-cmd.md  ->  commands/ingest-cmd.md
 ```
 
 ### Verify
@@ -117,6 +133,8 @@ Scans for common mistakes like `VAR=value`, `export`, backticks, `[[`, `$?`, and
 
 ```
 terminal-skill/
+├── .claude-plugin/
+│   └── plugin.json                     # Plugin manifest
 ├── skills/terminal/
 │   ├── SKILL.md                        # Main skill definition
 │   ├── .cache/                         # Collected data (gitignored)
@@ -127,13 +145,13 @@ terminal-skill/
 │       ├── fish-completion-options.md  # complete builtin reference
 │       ├── fish-bash-differences.md    # Bash vs Fish reference
 │       └── fish-shell-converter.md     # Conversion workflow
-├── agents/terminal/
+├── agents/
 │   └── cli-collector.md                # Background data collection agent
-├── commands/terminal/
+├── commands/
 │   └── ingest-cmd.md                   # /terminal:ingest-cmd slash command
 ├── examples/agents/
 │   └── fzf-expert.md                   # Example generated agent
-├── install.fish                        # Installer
+├── install.fish                        # Installer (dev workflow)
 ├── uninstall.fish                      # Uninstaller
 ├── LICENSE                             # MIT
 └── README.md
@@ -169,7 +187,7 @@ Edit `skills/terminal/references/agent-template.md` to change the structure of g
 
 ### Collector Behavior
 
-Edit `agents/terminal/cli-collector.md` to change what data is collected. The collector runs on Haiku with Bash-only tools and a 50-turn limit.
+Edit `agents/cli-collector.md` to change what data is collected. The collector runs on Haiku with Bash-only tools and a 50-turn limit.
 
 ### Completion Rules
 
