@@ -45,7 +45,7 @@ If you have the terminal plugin marketplace registered:
 Or install directly from the repository:
 
 ```
-/plugin install github:thalys/claude-terminal-skill
+/plugin install github:thalys/cc-barracuda
 ```
 
 ### Development Install
@@ -53,8 +53,8 @@ Or install directly from the repository:
 For contributors who clone the repo:
 
 ```fish
-git clone https://github.com/thalys/claude-terminal-skill.git
-cd claude-terminal-skill
+git clone https://github.com/thalys/cc-barracuda.git
+cd cc-barracuda
 fish install.fish
 ```
 
@@ -132,7 +132,7 @@ Scans for common mistakes like `VAR=value`, `export`, backticks, `[[`, `$?`, and
 ## Project Structure
 
 ```
-terminal-skill/
+cc-barracuda/
 ├── .claude-plugin/
 │   └── plugin.json                     # Plugin manifest
 ├── skills/terminal/
