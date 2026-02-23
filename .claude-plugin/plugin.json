@@ -1,0 +1,11 @@
+{
+  "name": "terminal",
+  "description": "CLI tool ingestion, Fish shell completions authoring, and bash-to-fish conversion. Turns any CLI tool into a specialized AI agent with Fish shell completions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Thalys"
+  },
+  "repository": "https://github.com/thalys/claude-terminal-skill",
+  "license": "MIT",
+  "keywords": ["cli", "fish-shell", "completions", "terminal", "bash-to-fish"]
+}
