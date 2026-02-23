@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "docs-claude-code": {
-      "type": "http",
-      "url": "https://code.claude.com/docs/mcp"
-    }
-  }
-}
